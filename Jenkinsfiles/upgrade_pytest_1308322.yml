@@ -2,8 +2,8 @@ pipeline:
   enabled: true
   script: "integration-tests"
 job:
-  dockerfile: "docker/images/integration-tests/Dockerfile"
+  dockerfile: "DockerfileIntegrationTests"
   selenium: "3.4.0"
   selenium_nodes: 5
-  base_url: 'https://developer.mozilla.org'
+  base_url: 'https://developer.allizom.org'
   tests: "not login"
